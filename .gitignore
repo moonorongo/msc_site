@@ -1,0 +1,4 @@
+lib/*
+plugins/*
+vendor/*
+composer.lock
