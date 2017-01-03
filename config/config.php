@@ -51,6 +51,8 @@ $config['content_dir'] = 'content/';  // Content directory
  * PLUGINS
  */
 // $config['DummyPlugin.enabled'] = false;      // Force DummyPlugin to be disabled
+$config['PicoFilePrefixes']['recursiveDirs'] = array('blog');
+$config['PicoFilePrefixes']['dirs'] = array();
 
 /*
  * CUSTOM

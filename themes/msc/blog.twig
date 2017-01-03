@@ -1,7 +1,9 @@
 {{ include('header.twig') }}
+
     <section id="content">
         <div class="inner">
-        {% for page in pages|sort_by("time")|reverse %}
+        <h2>{{meta.title}}</h2>
+        {% for page in pages|sort_by("name") %}
             {% if page.id starts with "blog/" %}
                 <div class="post">
                     <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
