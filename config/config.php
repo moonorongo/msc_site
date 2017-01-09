@@ -55,6 +55,16 @@ $config['PicoFilePrefixes']['recursiveDirs'] = array('blog');
 $config['PicoFilePrefixes']['dirs'] = array();
 
 /*
+ *  PAGINATION
+  */
+$config['pagination_limit'] = 2;
+$config['pagination_sub_page'] = true;
+$config['pagination_page_indicator'] = 'blog';
+$config['pagination_next_text'] = 'Siguiente >';
+$config['pagination_prev_text'] = '< Anterior';
+
+
+/*
  * CUSTOM
  */
 // $config['custom_setting'] = 'Hello';         // Can be accessed by {{ config.custom_setting }} in a theme

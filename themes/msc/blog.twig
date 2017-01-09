@@ -3,7 +3,7 @@
     <section id="content">
         <div class="inner">
         <h2>{{meta.title}}</h2>
-        {% for page in pages|sort_by("name") %}
+        {% for page in paged_pages|sort_by("name") %}
             {% if page.id starts with "blog/" %}
                 <div class="post">
                     <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
@@ -12,5 +12,7 @@
             {% endif %}
         {% endfor %}
         </div>
+        
+        {{ pagination_links }}
     </section>
 {{ include('footer.twig') }}
