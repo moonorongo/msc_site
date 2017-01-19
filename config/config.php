@@ -57,7 +57,7 @@ $config['PicoFilePrefixes']['dirs'] = array();
 /*
  *  PAGINATION
   */
-$config['pagination_limit'] = 2;
+$config['pagination_limit'] = 10;
 $config['pagination_sub_page'] = true;
 $config['pagination_page_indicator'] = 'blog';
 $config['pagination_next_text'] = 'Siguiente >';
