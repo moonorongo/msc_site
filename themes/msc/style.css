@@ -331,3 +331,26 @@ dd {
         padding: 30px 0;
     }
 }
+
+div.pagination {
+    height: 55px;
+    margin-top: 70px;    
+}
+
+div.pagination a {
+    display: block;
+    width: auto;
+    background-color: #2EAE9B;
+    padding: 15px 28px;
+    color: white;
+}
+
+div.pagination a#prev_page_link {
+    float: left;
+}
+
+div.pagination a#next_page_link {
+    float: right;
+    text-align: right;
+}
+

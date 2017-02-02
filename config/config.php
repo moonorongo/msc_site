@@ -50,18 +50,19 @@ $config['content_dir'] = 'content/';  // Content directory
 /*
  * PLUGINS
  */
-// $config['DummyPlugin.enabled'] = false;      // Force DummyPlugin to be disabled
+$config['DummyPlugin.enabled'] = false;      // Force DummyPlugin to be disabled
 $config['PicoFilePrefixes']['recursiveDirs'] = array('blog');
 $config['PicoFilePrefixes']['dirs'] = array();
 
 /*
  *  PAGINATION
   */
-$config['pagination_limit'] = 10;
+$config['pagination_limit'] = 8;
 $config['pagination_sub_page'] = true;
 $config['pagination_page_indicator'] = 'blog';
 $config['pagination_next_text'] = 'Siguiente >';
 $config['pagination_prev_text'] = '< Anterior';
+
 
 
 /*

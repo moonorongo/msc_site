@@ -2,17 +2,19 @@
 
     <section id="content">
         <div class="inner">
-        <h2>{{meta.title}}</h2>
-        {% for page in paged_pages|sort_by("name") %}
-            {% if page.id starts with "blog/" %}
-                <div class="post">
-                    <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
-                    <p class="excerpt">{{ page.description }}</p>
-                </div>
-            {% endif %}
-        {% endfor %}
+            <h2>{{meta.title}}</h2>
+            {% for page in paged_pages|sort_by("name") %}
+                {% if page.id starts with "blog/" %}
+                    <div class="post">
+                        <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+                        <p class="excerpt">{{ page.description }}</p>
+                    </div>
+                {% endif %}
+            {% endfor %}
+            
+            <div class="post pagination">
+            {{ pagination_links }}
+            </div>
         </div>
-        
-        {{ pagination_links }}
     </section>
 {{ include('footer.twig') }}
